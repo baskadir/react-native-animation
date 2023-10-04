@@ -2,6 +2,7 @@ import { StyleSheet, View } from 'react-native'
 import Animated, { withSpring } from 'react-native-reanimated';
 import { useSharedValue } from 'react-native-reanimated';
 import { Button } from '../../components/Button';
+import CustomView from '../../components/CustomView';
 
 const ChangeSize = () => {
     const width = useSharedValue(50);
@@ -15,7 +16,7 @@ const ChangeSize = () => {
     }
 
     return (
-        <View style={styles.container}>
+        <CustomView>
             <Animated.View style={{...styles.box, width, height}} />
             <View>
                 <Button title="Expand Width" onPress={() => handleChangeSize("+", true)} />
@@ -23,19 +24,13 @@ const ChangeSize = () => {
                 <Button title="Expand Height" onPress={() => handleChangeSize("+")} />
                 <Button title="Shorten Height" onPress={() => handleChangeSize("-")} />
             </View>
-        </View>
+        </CustomView>
     )
 }
 
 export default ChangeSize;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#ecf0f1'
-    },
     box: {
         backgroundColor: 'violet',
         borderRadius: 20,

@@ -7,6 +7,7 @@ const Index = () => {
         <View style={styles.container}>
             <NavButton title='Change Size' route='/(sample)/change-size' />
             <NavButton title='Translate' route='/(sample)/translate' />
+            <NavButton title='Change Radius' route='/(sample)/change-radius' />
             <StatusBar style="auto" />
         </View>
     )

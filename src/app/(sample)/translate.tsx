@@ -1,6 +1,7 @@
 import { StyleSheet, View } from 'react-native'
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { Button } from '../../components/Button';
+import CustomView from '../../components/CustomView';
 
 const Translate = () => {
     const translateX = useSharedValue(0);
@@ -16,23 +17,17 @@ const Translate = () => {
     }
 
     return (
-        <View style={styles.container}>
+        <CustomView>
             <Animated.View style={[styles.box, animatedStyles]} />
             <Button title='Move Right' onPress={() => handleMove("r")} />
             <Button title='Move Left' onPress={() => handleMove("l")} />
-        </View>
+        </CustomView>
     )
 }
 
 export default Translate
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#ecf0f1'
-    },
     box: {
         width: 100,
         height: 100,
