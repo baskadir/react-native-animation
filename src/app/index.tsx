@@ -8,6 +8,7 @@ const Index = () => {
             <NavButton title='Change Size' route='/(sample)/change-size' />
             <NavButton title='Translate' route='/(sample)/translate' />
             <NavButton title='Change Radius' route='/(sample)/change-radius' />
+            <NavButton title='Linear Easing' route='/(sample)/linear-easing' />
             <StatusBar style="auto" />
         </View>
     )
