@@ -13,6 +13,7 @@ const Index = () => {
             <NavButton title='Shake' route='/(sample)/shake' />
             <NavButton title='Circle Tap-Pan Gesture' route='/(sample)/circle-gesture' />
             <NavButton title='Square Pan Gesture' route='/(sample)/square-gesture' />
+            <NavButton title='Pan Gesture' route='/(sample)/inside-outside' />
             <StatusBar style="auto" />
         </GestureHandlerRootView>
     )
