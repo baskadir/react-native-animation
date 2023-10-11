@@ -21,6 +21,7 @@ const routes: IRoute[] = [
     { id: 9, title: 'Interpolate ScrollView', routeName: 'interpolate-scrollview' },
     { id: 10, title: 'Interpolate Color', routeName: 'interpolate-color' },
     { id: 11, title: 'Single / Double Tap', routeName: 'double-tap' },
+    { id: 12, title: 'Pinch Gesture', routeName: 'pinch-gesture' },
 ]
 
 const Index = () => {
