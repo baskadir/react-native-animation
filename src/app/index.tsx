@@ -23,6 +23,7 @@ const routes: IRoute[] = [
     { id: 11, title: 'Single / Double Tap', routeName: 'double-tap' },
     { id: 12, title: 'Pinch Gesture', routeName: 'pinch-gesture' },
     { id: 13, title: 'Circular Progress', routeName: 'circular-progress' },
+    { id: 14, title: 'Color Picker', routeName: 'color-picker' },
 ]
 
 const Index = () => {
