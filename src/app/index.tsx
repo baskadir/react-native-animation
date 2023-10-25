@@ -26,6 +26,7 @@ const routes: IRoute[] = [
     { id: 14, title: 'Color Picker', routeName: 'color-picker' },
     { id: 15, title: 'Swipe to Delete', routeName: 'swipe-delete' },
     { id: 16, title: 'Ripple Effect', routeName: 'ripple-effect' },
+    { id: 17, title: 'Perspective Menu', routeName: 'perspective-menu' },
 ]
 
 const Index = () => {
