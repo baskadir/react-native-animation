@@ -4,9 +4,6 @@ import Square from '../../components/Square';
 import { Easing, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated';
 import { useEffect } from 'react';
 
-export const SQUARE_COUNT = 12;
-export const SQUARE_SIZE = 12;
-
 const ClockLoader = () => {
     const progress = useSharedValue(0);
 
@@ -15,7 +12,7 @@ const ClockLoader = () => {
     }, [])
     return (
         <CustomView>
-            {new Array(SQUARE_COUNT).fill(0).map((_, index) => {
+            {new Array(12).fill(0).map((_, index) => {
                 return <Square key={index} index={index} progress={progress} />
             })}
         </CustomView>

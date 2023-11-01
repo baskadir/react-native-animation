@@ -1,5 +1,7 @@
 import Animated, { useAnimatedStyle, useDerivedValue, withSpring, withTiming } from 'react-native-reanimated';
-import { SQUARE_COUNT, SQUARE_SIZE } from '../app/(sample)/clock-loader';
+
+const SQUARE_COUNT = 12;
+const SQUARE_SIZE = 12;
 
 interface SquareProps {
     index: number;
