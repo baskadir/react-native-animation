@@ -31,6 +31,7 @@ const routes: IRoute[] = [
     { id: 19, title: 'Clock Loader', routeName: 'clock-loader' },
     { id: 20, title: 'Layout Fade In-Out', routeName: 'fade-inout' },
     { id: 21, title: 'Animated List', routeName: 'animated-list' },
+    { id: 22, title: 'Dropdown Menu', routeName: 'dropdown-menu' },
 ]
 
 const Index = () => {
