@@ -33,6 +33,7 @@ const routes: IRoute[] = [
     { id: 21, title: 'Animated List', routeName: 'animated-list' },
     { id: 22, title: 'Dropdown Menu', routeName: 'dropdown-menu' },
     { id: 23, title: 'Circular Carousel', routeName: 'circular-carousel' },
+    { id: 24, title: 'Skeleton Animation', routeName: 'skeleton' },
 ]
 
 const Index = () => {
